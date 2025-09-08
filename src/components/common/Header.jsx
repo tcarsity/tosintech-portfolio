@@ -17,7 +17,7 @@ const Header = () => {
               <Nav.Link href="/aboutme">About</Nav.Link>
               <Nav.Link href="/skills">Skills</Nav.Link>
               {/* <Nav.Link href="#skill">Service</Nav.Link> */}
-              <Nav.Link href="#project">Projects</Nav.Link>
+
               <Nav.Link href="#contact">Contact</Nav.Link>
               {/* <Link to="" className="btn btn-primary  rounded-pill ms-2">
                 Hire Me
