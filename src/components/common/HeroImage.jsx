@@ -64,7 +64,7 @@ const HeroImage = () => {
                   </svg>
                 </Link>
 
-                <Link to="https://wa.me/09115932339">
+                <Link to="https://wa.me/9115932339">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
