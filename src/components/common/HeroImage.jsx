@@ -38,7 +38,7 @@ const HeroImage = () => {
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
                   </svg>
                 </a>
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/tosin-olarewaju">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -51,7 +51,7 @@ const HeroImage = () => {
                   </svg>
                 </Link>
 
-                <Link to="">
+                <Link to="https://facebook.com/Tcarsity">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -64,7 +64,7 @@ const HeroImage = () => {
                   </svg>
                 </Link>
 
-                <Link to="">
+                <Link to="https://twitter.com/tosin_olarewaju">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -77,7 +77,7 @@ const HeroImage = () => {
                   </svg>
                 </Link>
 
-                <Link to="">
+                <Link to="https://wa.me/09115932339">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

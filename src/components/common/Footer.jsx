@@ -112,7 +112,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-4 icons">
-                  <Link to="">
+                  <Link to="https://www.linkedin.com/in/tosin-olarewaju">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -125,7 +125,7 @@ const Footer = () => {
                     </svg>
                   </Link>
 
-                  <Link to="">
+                  <Link to="https://facebook.com/Tcarsity">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -138,7 +138,7 @@ const Footer = () => {
                     </svg>
                   </Link>
 
-                  <Link to="">
+                  <Link to="https://twitter.com/tosin_olarewaju">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -151,7 +151,7 @@ const Footer = () => {
                     </svg>
                   </Link>
 
-                  <Link to="">
+                  <Link to="https://wa.me/09115932339">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
