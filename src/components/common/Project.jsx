@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { apiUrl, fileUrl } from "./http";
+import { apiUrl, SUPABASE_BUCKET_URL } from "./http";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -65,8 +65,12 @@ const Project = () => {
                     >
                       <img
                         className="card-img-top"
-                        src={`${fileUrl}uploads/projects/small/${project.image}`}
-                        alt=""
+                        src={
+                          project.image
+                            ? `${SUPABASE_BUCKET_URL}/projects/small/${project.image}`
+                            : "/placeholder.png"
+                        }
+                        alt={project.title}
                       />
                       <div className="card-body p-4 d-flex flex-column flex-grow-1">
                         <h3 className="btn btn-primary btn-sm disabled rounded-pill h3 w-50">
