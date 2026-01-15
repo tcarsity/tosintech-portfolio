@@ -9,7 +9,7 @@ const Service = () => {
       <div className="container py-5">
         <h1 className="text-center">Services</h1>
         <p className="text-center">End-to-End Solutions.</p>
-        <div className="row g-3 ">
+        <div className="row">
           <div className="col-md-4">
             <div className="card border-0 h-100">
               <img
@@ -17,7 +17,7 @@ const Service = () => {
                 className="card-img-top img-fluid"
                 alt="..."
               />
-              <div className="card-body p-0">
+              <div className="card-body p-4">
                 <h5 className="card-title">Web Development</h5>
                 <p className="card-text">
                   We build fast, responsive, and scalable websites tailored to
@@ -36,7 +36,7 @@ const Service = () => {
                 className="card-img-top img-fluid"
                 alt="..."
               />
-              <div className="card-body p-0">
+              <div className="card-body p-4">
                 <h5 className="card-title">Creative Design</h5>
                 <p className="card-text">
                   We bring ideas to life through bold, eye catching design. From
@@ -50,7 +50,7 @@ const Service = () => {
           <div className="col-md-4">
             <div className="card border-0 h-100">
               <img src={quality} className="card-img-top img-fluid" alt="..." />
-              <div className="card-body p-0">
+              <div className="card-body p-4">
                 <h5 className="card-title">High Quality</h5>
                 <p className="card-text">
                   We are committed to delivering work that meets the highest
