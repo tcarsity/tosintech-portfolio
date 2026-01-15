@@ -9,7 +9,7 @@ const Service = () => {
       <div className="container py-5">
         <h1 className="text-center">Services</h1>
         <p className="text-center">End-to-End Solutions.</p>
-        <div className="row">
+        <div className="row g-3">
           <div className="col-md-4">
             <div className="card border-0 h-100">
               <img
