@@ -261,7 +261,7 @@ const Footer = () => {
               <hr className="mt-4" />
             </div>
             <div className="text-center copy">
-              Copyright &copy; 2025 TosinTech. All Rights Reserved.
+              Copyright &copy; 2026 TosinTech. All Rights Reserved.
             </div>
           </div>
         </div>

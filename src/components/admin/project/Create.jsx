@@ -6,6 +6,7 @@ import { apiUrl, token } from "../../common/http";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import JoditEditor from "jodit-react";
+import { resizeImage } from "../../../utils/imageResize";
 
 const Create = ({ placeholder }) => {
   const editor = useRef(null);
@@ -52,27 +53,36 @@ const Create = ({ placeholder }) => {
   };
 
   const handleFile = async (e) => {
-    const formData = new FormData();
     const file = e.target.files[0];
-    formData.append("image", file);
+    if (!file) return;
 
-    // http://localhost:8000/api/temp-images
-    await fetch(apiUrl + "/temp-images", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        Authorization: `Bearer ${token()}`,
-      },
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((result) => {
-        if (result.status == 404) {
-          toast.error(result.errors.image[0]);
-        } else {
-          setImageId(result.data.id);
-        }
+    try {
+      const resizedImage = await resizeImage(file, 1200);
+
+      const formData = new FormData();
+      formData.append("image", resizedImage);
+
+      const res = await fetch(apiUrl + "/temp-images", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token()}`,
+        },
+        body: formData,
       });
+
+      const result = await res.json();
+
+      if (!result.status) {
+        toast.error(result.errors || "Image upload failed");
+        return;
+      }
+
+      setImageId(result.data.id);
+    } catch (error) {
+      console.error(error);
+      toast.error("Image processing failed");
+    }
   };
   return (
     <>
