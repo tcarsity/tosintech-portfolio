@@ -74,7 +74,7 @@ const Project = () => {
                       />
 
                       <div className="card-body p-4 d-flex flex-column flex-grow-1">
-                        <h3 className="btn btn-primary btn-sm disabled rounded-pill h3 w-50">
+                        <h3 className="btn btn-primary btn-sm disabled rounded-pill h3 w-50 github">
                           {project.site}
                         </h3>
                         <h5 className="card-title mt-3">{project.title}</h5>
