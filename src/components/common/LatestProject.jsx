@@ -74,7 +74,7 @@ const LatestProject = () => {
                             className="card-img-top"
                             src={
                               project.image
-                                ? `${SUPABASE_BUCKET_URL}/projects/small/${project.image}`
+                                ? `${SUPABASE_BUCKET_URL}/portfolio/projects/small/${project.image}`
                                 : "/placeholder.png"
                             }
                             alt={project.title}
