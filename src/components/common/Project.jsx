@@ -67,11 +67,12 @@ const Project = () => {
                         className="card-img-top"
                         src={
                           project.image
-                            ? `${SUPABASE_BUCKET_URL}/projects/small/${project.image}`
+                            ? `${SUPABASE_BUCKET_URL}/portfolio/projects/small/${project.image}`
                             : "/placeholder.png"
                         }
                         alt={project.title}
                       />
+
                       <div className="card-body p-4 d-flex flex-column flex-grow-1">
                         <h3 className="btn btn-primary btn-sm disabled rounded-pill h3 w-50">
                           {project.site}
