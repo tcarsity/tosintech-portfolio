@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../assets/images/tosin0.jpg";
+import heroImg from "../../assets/images/Tosin-img.png";
 import { Link } from "react-router-dom";
 import resume from "../../assets/Tosin_Olarewaju_Resume.pdf";
 

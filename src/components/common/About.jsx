@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg2 from "../../assets/images/about.jpg";
+import heroImg2 from "../../assets/images/about.png";
 import ShapeDivider from "../ShapeDivider";
 
 const About = () => {
