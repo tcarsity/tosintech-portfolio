@@ -12,7 +12,7 @@ const About = () => {
             <div className="col-md-6 mt-3 col-sm-12 ">
               <img src={heroImg2} alt="" className="img-fluid" />
             </div>
-            <div className="col-md-6 col-sm-12 mt-2 d-flex justify-content-center align-items-center ">
+            <div className="col-md-6 col-sm-12 mt-2 d-flex justify-content-center align-items-center mt-2">
               <div className="about-content">
                 <h2>FullStack Web Developer</h2>
                 <p>
