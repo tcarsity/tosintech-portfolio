@@ -13,10 +13,11 @@ const HeroImage = () => {
               <h1>Hi, I'm Tosin Olarewaju</h1>
               <h3>Fullstack Developer</h3>
               <p>
-                I build exceptional and accessible digital experiences for web.
-                <br />
-                Specialized in creating modern, responsive website and clean
-                code.
+                Full-stack developer specializing in Laravel and React, with a
+                focus on authentication, security, and real-world application
+                stability. <br />I enjoy building systems that are clean,
+                reliable, and user-friendly—from login flows and role management
+                to deployment and production debugging.
               </p>
 
               <div className="mt-4">

@@ -16,17 +16,31 @@ const About = () => {
               <div className="about-content">
                 <h2>FullStack Web Developer</h2>
                 <p>
-                  I'm a passionate web developer with 5 years of experience
-                  creating beautiful, functional, and user-centered digital
-                  experiences. I am always looking to learn new technologies and
-                  improve my skills.
+                  I’m a full-stack developer who enjoys building reliable,
+                  real-world applications—not just features that work once, but
+                  systems that hold up over time. I work primarily with Laravel
+                  and React, and I’m especially interested in authentication,
+                  security, performance, and user experience. I care a lot about
+                  how users interact with an application, but I care just as
+                  much about what’s happening behind the scenes—session
+                  handling, access control, error states, and deployment
+                  stability.
                 </p>
                 <p>
-                  With a strong foundation of both backend and front-end
-                  development and a keen eye for design, I create websites that
-                  not only look great but also provide exceptional user
-                  experiences. I'm dedicated to writing clean, optimized code
-                  and using modern development practices.
+                  Over time, I’ve worked on projects that required more than
+                  just “writing code.” Things like: Designing role-based
+                  authentication (admin / super admin) Handling session timeouts
+                  and inactive users correctly Building defensive UX for slow or
+                  unstable networks Logging security events properly (IP, user
+                  agent, activity) Deploying and maintaining apps using Docker,
+                  Render, and PostgreSQL Debugging production issues instead of
+                  avoiding them Whether I’m working on a church platform, an
+                  admin dashboard, or a client project, my goal is always the
+                  same: build something clean, secure, and maintainable. I’m
+                  open to full-time roles, contract work, and freelance
+                  projects, especially where I can take ownership, improve
+                  existing systems, or help turn a rough idea into a solid
+                  product.
                 </p>
               </div>
             </div>
