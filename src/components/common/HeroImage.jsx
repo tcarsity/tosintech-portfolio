@@ -11,10 +11,10 @@ const HeroImage = () => {
           <div className="row hero pt-4">
             <div className="col-md-7 col-sm-12 hero-content">
               <h1>Hi, I'm Tosin Olarewaju</h1>
-              <h3>Fullstack Developer</h3>
+              <h3>Fullstack Web Developer</h3>
               <p>
-                Full-stack developer specializing in Laravel and React, with a
-                focus on authentication, security, and real-world application
+                Full-stack web developer specializing in Laravel and React, with
+                a focus on authentication, security, and real-world application
                 stability. <br />I enjoy building systems that are clean,
                 reliable, and user-friendly—from login flows and role management
                 to deployment and production debugging.

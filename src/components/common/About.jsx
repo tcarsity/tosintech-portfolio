@@ -16,7 +16,7 @@ const About = () => {
               <div className="about-content">
                 <h2>FullStack Web Developer</h2>
                 <p>
-                  I’m a full-stack developer who enjoys building reliable,
+                  I’m a full-stack web developer who enjoys building reliable,
                   real-world applications—not just features that work once, but
                   systems that hold up over time. I work primarily with Laravel
                   and React, and I’m especially interested in authentication,
