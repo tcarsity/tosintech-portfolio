@@ -12,14 +12,21 @@ import { Link } from "react-router-dom";
 
 const LatestProject = () => {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchProjects = async () => {
-    const res = await fetch(apiUrl + "/get-projects", {
-      method: "GET",
-    });
-    const result = await res.json();
-    if (result.status == 200) {
-      setProjects(result.data);
+    try {
+      const res = await fetch(apiUrl + "/get-projects", {
+        method: "GET",
+      });
+      const result = await res.json();
+      if (result.status == 200) {
+        setProjects(result.data);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -46,30 +53,29 @@ const LatestProject = () => {
                 slidesPerView={3}
                 pagination={{ clickable: true }}
                 breakpoints={{
-                  200: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                  },
-
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
+                  200: { slidesPerView: 1, spaceBetween: 20 },
+                  768: { slidesPerView: 2, spaceBetween: 20 },
+                  1024: { slidesPerView: 3, spaceBetween: 50 },
                 }}
               >
-                {projects &&
-                  projects.map((project) => {
-                    return (
-                      <SwiperSlide>
-                        <div
-                          className="card shadow border-0 h-100 d-flex flex-column"
-                          key={`project-${project.id}`}
-                        >
+                {loading
+                  ? Array.from({ length: 6 }).map((_, i) => (
+                      <SwiperSlide key={`skeleton-${i}`}>
+                        <div className="card shadow border-0 h-100 d-flex flex-column">
+                          <div className="skeleton-img"></div>
+
+                          <div className="card-body p-4">
+                            <div className="skeleton-line w-50 mb-3"></div>
+                            <div className="skeleton-line w-75 mb-2"></div>
+                            <div className="skeleton-line w-100 mb-2"></div>
+                            <div className="skeleton-line w-25 mt-4"></div>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))
+                  : projects.map((project) => (
+                      <SwiperSlide key={`project-${project.id}`}>
+                        <div className="card shadow border-0 h-100 d-flex flex-column">
                           <img
                             className="card-img-top"
                             src={
@@ -79,10 +85,12 @@ const LatestProject = () => {
                             }
                             alt={project.title}
                           />
+
                           <div className="card-body p-4 d-flex flex-column flex-grow-1">
                             <h3 className="btn btn-primary btn-sm disabled rounded-pill">
                               {project.site}
                             </h3>
+
                             <h5 className="card-title mt-3">{project.title}</h5>
 
                             <p
@@ -91,10 +99,11 @@ const LatestProject = () => {
                                 __html: project.content,
                               }}
                             ></p>
+
                             <div className="mt-auto">
                               <Link
                                 to="https://github.com/tcarsity"
-                                className="btn btn-primary rounded-pill  github"
+                                className="btn btn-primary rounded-pill github"
                               >
                                 View Code in Github
                               </Link>
@@ -102,8 +111,7 @@ const LatestProject = () => {
                           </div>
                         </div>
                       </SwiperSlide>
-                    );
-                  })}
+                    ))}
               </Swiper>
             </div>
           </div>
